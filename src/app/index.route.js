@@ -8,13 +8,17 @@
   function routeConfig($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+        templateUrl: 'app/todos/todos.html',
+        controller: 'TodosController',
+        controllerAs: 'todos',
+        resolve: {
+          todos: function (todosApi) {
+            return todosApi.index().$promise;
+          }
+        }
       })
       .otherwise({
         redirectTo: '/'
       });
   }
-
 })();
