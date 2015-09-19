@@ -9,13 +9,13 @@ Welcome to the 2015 AngularJS Intermediate Workshop. Today we'll be learning to 
   ```
   brew install node
   ```
-2. Bower:
+2. Bower & Gulp:
   ```
-  npm install -g bower
+  npm install -g bower gulp
   ```
 
 ## Getting Started
-Fork this project into your own account then pull it down to your computer. Once complete, run `bower install`. Now you're ready to run the server and development. Run the server using `gulp serve`.
+Fork this project into your own account then pull it down to your computer. Once complete, run `npm install` & `bower install`. Now you're ready to run the server and development. Run the server using `gulp serve`.
 
 ## Project Requirements
 **Goal**: Write a directive to replace the todo list items.
